@@ -12,4 +12,18 @@ public class SortingUtils {
 		intArray[i] = temp;
 	}
 
+	public static void printIntArray(int[] intArray, String prefix) {
+		System.out.print(prefix + " Array: ");
+		for (int i : intArray) {
+			System.out.print(i + " ");
+		}
+		System.out.println();
+	}
+
+	public static int[] initIntArray() {
+		int[] intArray = {5, -7, 32, 12, -80, 31};
+
+		return intArray;
+	}
+
 }
