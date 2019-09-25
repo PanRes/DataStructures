@@ -1,5 +1,7 @@
 package gr.pr.udemy.data.structures.sort;
 
+import static gr.pr.udemy.data.structures.sort.SortingUtils.swapIntArray;
+
 public class BubbleSort {
 
 	public static void sort(int[] intArray, int unsortedPartitionIndex) {
@@ -9,16 +11,11 @@ public class BubbleSort {
 		else {
 			for (int i = 0; i < unsortedPartitionIndex; i++) {
 				if (intArray[i] > intArray[i+1]) {
-					swap(intArray, i);
+					swapIntArray(intArray, i, i+1);
 				}
 			}
 			sort(intArray, unsortedPartitionIndex);
 		}
 	}
 
-	private static void swap(int[] intArray, int i) {
-		int temp = intArray[i+1];
-		intArray[i+1] = intArray[i];
-		intArray[i] = temp;
-	}
 }
