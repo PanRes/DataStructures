@@ -10,7 +10,8 @@ public class SortingMain {
 			System.out.print(i + " ");
 		}
 
-		BubbleSort.sort(intArray, intArray.length);
+//		BubbleSort.sort(intArray, intArray.length);
+		SelectionSort.sort(intArray, intArray.length);
 
 		System.out.print("\nSorted Array: ");
 		for (int i : intArray) {
