@@ -1,8 +1,8 @@
-package gr.pr.udemy.data.structures;
+package gr.pr.udemy.data.structures.sort;
 
 public class BubbleSort {
 
-	public static void bubbleSort(int[] intArray, int unsortedPartitionIndex) {
+	public static void sort(int[] intArray, int unsortedPartitionIndex) {
 		if (--unsortedPartitionIndex == 0) {
 			return;
 		}
@@ -12,7 +12,7 @@ public class BubbleSort {
 					swap(intArray, i);
 				}
 			}
-			bubbleSort(intArray, unsortedPartitionIndex);
+			sort(intArray, unsortedPartitionIndex);
 		}
 	}
 

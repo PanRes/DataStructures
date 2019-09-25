@@ -1,6 +1,4 @@
-package gr.pr.udemy.data.structures;
-
-import static gr.pr.udemy.data.structures.BubbleSort.bubbleSort;
+package gr.pr.udemy.data.structures.sort;
 
 public class SortingMain {
 
@@ -12,7 +10,7 @@ public class SortingMain {
 			System.out.print(i + " ");
 		}
 
-		bubbleSort(intArray, intArray.length);
+		BubbleSort.sort(intArray, intArray.length);
 
 		System.out.print("\nSorted Array: ");
 		for (int i : intArray) {
