@@ -11,7 +11,8 @@ public class SortingMain {
 		}
 
 //		BubbleSort.sort(intArray, intArray.length);
-		SelectionSort.sort(intArray, intArray.length);
+//		SelectionSort.sort(intArray, intArray.length);
+		InsertionSort.sort(intArray, 1);
 
 		System.out.print("\nSorted Array: ");
 		for (int i : intArray) {
