@@ -2,7 +2,7 @@ package gr.pr.udemy.data.structures.sort;
 
 public class SortingUtils {
 
-	public static void swapIntArray(int[] intArray, int i, int j) {
+	public static void swap(int[] intArray, int i, int j) {
 		if (i == j) {
 			return;
 		}

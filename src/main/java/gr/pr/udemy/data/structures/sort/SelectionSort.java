@@ -1,6 +1,6 @@
 package gr.pr.udemy.data.structures.sort;
 
-import static gr.pr.udemy.data.structures.sort.SortingUtils.swapIntArray;
+import static gr.pr.udemy.data.structures.sort.SortingUtils.swap;
 
 public class SelectionSort {
 
@@ -13,7 +13,7 @@ public class SelectionSort {
 				}
 			}
 
-			swapIntArray(intArray, minIndex, i);
+			swap(intArray, minIndex, i);
 		}
 	}
 
