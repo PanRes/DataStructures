@@ -20,10 +20,9 @@ public class SortingUtils {
 		System.out.println();
 	}
 
+	//TODO fix initiation
 	public static int[] initIntArray() {
-		int[] intArray = {5, -7, 32, 12, -80, 31};
-
-		return intArray;
+		return new int[] {5, -7, 32, 12, -80, 31};
 	}
 
 }
