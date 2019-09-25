@@ -4,17 +4,17 @@ import static gr.pr.udemy.data.structures.sort.SortingUtils.swapIntArray;
 
 public class BubbleSort {
 
-	public static void sort(int[] intArray, int unsortedPartitionIndex) {
-		if (--unsortedPartitionIndex == 0) {
+	public static void sort(int[] intArray, int lastUnsortedPartitionIndex) {
+		if (--lastUnsortedPartitionIndex == 0) {
 			return;
 		}
 		else {
-			for (int i = 0; i < unsortedPartitionIndex; i++) {
+			for (int i = 0; i < lastUnsortedPartitionIndex; i++) {
 				if (intArray[i] > intArray[i+1]) {
 					swapIntArray(intArray, i, i+1);
 				}
 			}
-			sort(intArray, unsortedPartitionIndex);
+			sort(intArray, lastUnsortedPartitionIndex);
 		}
 	}
 
