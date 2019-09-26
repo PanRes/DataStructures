@@ -24,8 +24,13 @@ public class SortingUtils {
 		System.out.println();
 	}
 
-	public static int[] initIntArray() {
-		return new int[] {5, -7, 32, 12, -80, 31};
+	public static int[] initIntArray(boolean hasDuplicates) {
+		if (hasDuplicates) {
+			return new int[] {2, 5, 9, 8, 2, 8, 7, 10, 4, 3};
+		}
+		else {
+			return new int[] {5, -7, 32, 12, -80, 31};
+		}
 	}
 
 }
