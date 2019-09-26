@@ -1,7 +1,6 @@
 package gr.pr.udemy.data.structures.sort;
 
-import static gr.pr.udemy.data.structures.sort.SortingUtils.initIntArray;
-import static gr.pr.udemy.data.structures.sort.SortingUtils.printIntArray;
+import static gr.pr.udemy.data.structures.sort.SortingUtils.*;
 
 public class SortingMain {
 
@@ -32,14 +31,20 @@ public class SortingMain {
 		System.out.println("\n");
 		intArray = initIntArray(false);
 		printIntArray(intArray, "MergeSort Unsorted");
-		MergeSort.sort(intArray, 0 , intArray.length);
+		MergeSort.sort(intArray, 0, intArray.length);
 		printIntArray(intArray, "MergeSort Sorted");
 
 		System.out.println("\n");
 		intArray = initIntArray(false);
 		printIntArray(intArray, "QuickSort Unsorted");
-		QuickSort.sort(intArray, 0 , intArray.length);
+		QuickSort.sort(intArray, 0, intArray.length);
 		printIntArray(intArray, "QuickSort Sorted");
+
+		System.out.println("\n");
+		intArray = initIntArray(true);
+		printIntArray(intArray, "CountingSort Unsorted");
+		CountingSort.sort(intArray, getMinFromIntArray(intArray), getMaxFromIntArray(intArray));
+		printIntArray(intArray, "CountingSort Sorted");
 
 	}
 }
