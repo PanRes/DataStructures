@@ -12,15 +12,15 @@ public class SortingMain {
 		BubbleSort.sort(intArray, intArray.length);
 		printIntArray(intArray, "BubbleSort Sorted");
 
-		System.out.println();
-		printIntArray(intArray, "SelectionSort Unsorted");
+		System.out.println("\n");
 		intArray = initIntArray();
+		printIntArray(intArray, "SelectionSort Unsorted");
 		SelectionSort.sort(intArray, intArray.length);
 		printIntArray(intArray, "SelectionSort Sorted");
 
-		System.out.println();
-		printIntArray(intArray, "InsertionSort Unsorted");
+		System.out.println("\n");
 		intArray = initIntArray();
+		printIntArray(intArray, "InsertionSort Unsorted");
 		InsertionSort.sort(intArray, 1);
 		printIntArray(intArray, "InsertionSort Sorted");
 
