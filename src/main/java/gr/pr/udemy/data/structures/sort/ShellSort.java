@@ -1,5 +1,7 @@
 package gr.pr.udemy.data.structures.sort;
 
+import static gr.pr.udemy.data.structures.sort.SortingUtils.printIntArray;
+
 public class ShellSort {
 	
 	public static void sort(int[] intArray) {
@@ -13,10 +15,8 @@ public class ShellSort {
 				}
 
 				intArray[j] = newElement;
-				for (int intElement : intArray) {
-					System.out.print(intElement + " ");
-				}
-				System.out.println();
+
+				printIntArray(intArray, " ");
 			}
 		}
 	}

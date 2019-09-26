@@ -11,9 +11,8 @@ public class SortingUtils {
 		intArray[j] = intArray[i];
 		intArray[i] = temp;
 
-		System.out.println(" Swapped elements " + i + " and " + j + " with respective values: " + intArray[i] + " and " + intArray[j]);
-		System.out.println(" Swap result: ");
-		printIntArray(intArray, "");
+		System.out.println("  Swapped elements " + i + " and " + j + " with respective values: " + intArray[i] + " and " + intArray[j]);
+		printIntArray(intArray, " ");
 		System.out.println();
 	}
 
