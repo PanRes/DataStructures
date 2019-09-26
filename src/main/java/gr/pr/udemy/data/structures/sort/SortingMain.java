@@ -24,5 +24,11 @@ public class SortingMain {
 		InsertionSort.sort(intArray, 1);
 		printIntArray(intArray, "InsertionSort Sorted");
 
+		System.out.println("\n");
+		intArray = initIntArray();
+		printIntArray(intArray, "ShellSort Unsorted");
+		ShellSort.sort(intArray);
+		printIntArray(intArray, "ShellSort Sorted");
+
 	}
 }
