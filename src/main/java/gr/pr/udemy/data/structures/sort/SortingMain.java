@@ -30,5 +30,11 @@ public class SortingMain {
 		ShellSort.sort(intArray);
 		printIntArray(intArray, "ShellSort Sorted");
 
+		System.out.println("\n");
+		intArray = initIntArray();
+		printIntArray(intArray, "MergeSort Unsorted");
+		MergeSort.sort(intArray, 0 , intArray.length);
+		printIntArray(intArray, "MergeSort Sorted");
+
 	}
 }
