@@ -36,5 +36,11 @@ public class SortingMain {
 		MergeSort.sort(intArray, 0 , intArray.length);
 		printIntArray(intArray, "MergeSort Sorted");
 
+		System.out.println("\n");
+		intArray = initIntArray();
+		printIntArray(intArray, "QuickSort Unsorted");
+		QuickSort.sort(intArray, 0 , intArray.length);
+		printIntArray(intArray, "QuickSort Sorted");
+
 	}
 }
