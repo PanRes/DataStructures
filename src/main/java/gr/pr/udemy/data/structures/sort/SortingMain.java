@@ -5,7 +5,6 @@ import static gr.pr.udemy.data.structures.sort.SortingUtils.printIntArray;
 
 public class SortingMain {
 
-	//TODO print for every step
 	public static void main(String[] args) {
 		int[] intArray = initIntArray(false);
 		printIntArray(intArray, "BubbleSort Unsorted");
