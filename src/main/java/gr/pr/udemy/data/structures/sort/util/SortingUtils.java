@@ -25,8 +25,11 @@ public class SortingUtils {
 	}
 
 	public static int[] initIntArray(SortInitializeMethod initType) {
-		if (initType.equals(SortInitializeMethod.SIMILAR_LENGTH_MAX_MIN)) {
+		if (SortInitializeMethod.SIMILAR_LENGTH_MAX_MIN.equals(initType)) {
 			return new int[] {2, 5, 9, 8, 2, 8, 7, 10, 4, 3};
+		}
+		else if (SortInitializeMethod.MULTI_DIGIT.equals(initType)) {
+			return new int[] {4725, 4586, 1330, 8792, 1594, 5729};
 		}
 		else {
 			return new int[] {5, -7, 32, 12, -80, 31};

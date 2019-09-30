@@ -49,5 +49,12 @@ public class SortingMain {
 		CountingSort.sort(intArray, getMinFromIntArray(intArray), getMaxFromIntArray(intArray));
 		printIntArray(intArray, "CountingSort Sorted");
 
+
+		System.out.println("\n");
+		intArray = initIntArray(SortInitializeMethod.MULTI_DIGIT);
+		printIntArray(intArray, "RadixSort Unsorted");
+		RadixSort.sort(intArray, getMinFromIntArray(intArray), getMaxFromIntArray(intArray));
+		printIntArray(intArray, "RadixSort Sorted");
+
 	}
 }
