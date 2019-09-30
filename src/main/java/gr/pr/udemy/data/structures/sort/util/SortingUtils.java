@@ -1,4 +1,4 @@
-package gr.pr.udemy.data.structures.sort;
+package gr.pr.udemy.data.structures.sort.util;
 
 public class SortingUtils {
 

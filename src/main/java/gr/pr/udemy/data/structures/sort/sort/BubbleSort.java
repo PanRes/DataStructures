@@ -1,6 +1,6 @@
-package gr.pr.udemy.data.structures.sort;
+package gr.pr.udemy.data.structures.sort.sort;
 
-import static gr.pr.udemy.data.structures.sort.SortingUtils.swap;
+import static gr.pr.udemy.data.structures.sort.util.SortingUtils.swap;
 
 public class BubbleSort {
 

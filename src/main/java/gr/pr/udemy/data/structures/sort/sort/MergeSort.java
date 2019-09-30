@@ -1,6 +1,6 @@
-package gr.pr.udemy.data.structures.sort;
+package gr.pr.udemy.data.structures.sort.sort;
 
-import static gr.pr.udemy.data.structures.sort.SortingUtils.printIntArray;
+import static gr.pr.udemy.data.structures.sort.util.SortingUtils.printIntArray;
 
 public class MergeSort {
 

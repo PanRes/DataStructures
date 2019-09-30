@@ -1,6 +1,8 @@
 package gr.pr.udemy.data.structures.sort;
 
-import static gr.pr.udemy.data.structures.sort.SortingUtils.*;
+import gr.pr.udemy.data.structures.sort.sort.*;
+
+import static gr.pr.udemy.data.structures.sort.util.SortingUtils.*;
 
 public class SortingMain {
 
