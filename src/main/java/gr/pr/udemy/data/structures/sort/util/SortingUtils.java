@@ -24,8 +24,8 @@ public class SortingUtils {
 		System.out.println();
 	}
 
-	public static int[] initIntArray(boolean hasDuplicates) {
-		if (hasDuplicates) {
+	public static int[] initIntArray(SortInitializeMethod initType) {
+		if (initType.equals(SortInitializeMethod.SIMILAR_LENGTH_MAX_MIN)) {
 			return new int[] {2, 5, 9, 8, 2, 8, 7, 10, 4, 3};
 		}
 		else {
