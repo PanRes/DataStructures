@@ -1,5 +1,7 @@
 package gr.pr.udemy.data.structures.sort.util;
 
+import java.util.Arrays;
+
 public class SortingUtils {
 
 	public static void swap(int[] intArray, int i, int j) {
@@ -21,6 +23,12 @@ public class SortingUtils {
 		for (int i : intArray) {
 			System.out.print(i + " ");
 		}
+		System.out.println();
+	}
+
+	public static void printArray(String[] stringArray, String prefix) {
+		System.out.print(prefix + " Array: ");
+		Arrays.stream(stringArray).forEach(s -> System.out.print(s + " "));
 		System.out.println();
 	}
 
