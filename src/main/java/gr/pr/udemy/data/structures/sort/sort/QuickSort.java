@@ -1,6 +1,6 @@
 package gr.pr.udemy.data.structures.sort.sort;
 
-import static gr.pr.udemy.data.structures.sort.util.SortingUtils.printIntArray;
+import static gr.pr.udemy.data.structures.sort.util.SortingUtils.printArray;
 
 //TODO create QuickSort with two fors instead of whiles and ifs
 public class QuickSort {
@@ -25,20 +25,20 @@ public class QuickSort {
 			if (i < j) {
 				intArray[i] = intArray[j];
 				System.out.print("  pivot: " + pivot + " |");
-				printIntArray(intArray, "");
+				printArray(intArray, "");
 			}
 
 			while (i < j && intArray[++i] <= pivot);
 			if (i < j) {
 				intArray[j] = intArray[i];
 				System.out.print("  pivot: " + pivot + " |");
-				printIntArray(intArray, "");
+				printArray(intArray, "");
 			}
 
 		}
 
 		intArray[j] = pivot;
-		printIntArray(intArray, " ");
+		printArray(intArray, " ");
 
 		return j;
 	}

@@ -1,6 +1,6 @@
 package gr.pr.udemy.data.structures.sort.sort;
 
-import static gr.pr.udemy.data.structures.sort.util.SortingUtils.printIntArray;
+import static gr.pr.udemy.data.structures.sort.util.SortingUtils.printArray;
 
 public class CountingSort {
 
@@ -16,8 +16,8 @@ public class CountingSort {
 			while (countArray[i - min] > 0) {
 				intArray[j++] = i;
 				countArray[i - min]--;
-				printIntArray(intArray, " ");
-				printIntArray(countArray, "  Counting");
+				printArray(intArray, " ");
+				printArray(countArray, "  Counting");
 			}
 		}
 	}

@@ -12,11 +12,11 @@ public class SortingUtils {
 		intArray[i] = temp;
 
 		System.out.println("  Swapped elements " + i + " and " + j + " with respective values: " + intArray[i] + " and " + intArray[j]);
-		printIntArray(intArray, " ");
+		printArray(intArray, " ");
 		System.out.println();
 	}
 
-	public static void printIntArray(int[] intArray, String prefix) {
+	public static void printArray(int[] intArray, String prefix) {
 		System.out.print(prefix + " Array: ");
 		for (int i : intArray) {
 			System.out.print(i + " ");

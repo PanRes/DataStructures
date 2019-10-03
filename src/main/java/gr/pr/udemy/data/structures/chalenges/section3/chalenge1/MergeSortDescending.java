@@ -1,6 +1,6 @@
 package gr.pr.udemy.data.structures.chalenges.section3.chalenge1;
 
-import static gr.pr.udemy.data.structures.sort.util.SortingUtils.printIntArray;
+import static gr.pr.udemy.data.structures.sort.util.SortingUtils.printArray;
 
 public class MergeSortDescending {
 
@@ -32,7 +32,7 @@ public class MergeSortDescending {
 
 		System.arraycopy(intArray, i, intArray, startIndex + tempIndex, midIndex - i);
 		System.arraycopy(tempArray, 0, intArray, startIndex, tempIndex);
-		printIntArray(intArray, " ");
+		printArray(intArray, " ");
 
 	}
 

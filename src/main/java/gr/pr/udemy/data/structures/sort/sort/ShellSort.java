@@ -1,6 +1,6 @@
 package gr.pr.udemy.data.structures.sort.sort;
 
-import static gr.pr.udemy.data.structures.sort.util.SortingUtils.printIntArray;
+import static gr.pr.udemy.data.structures.sort.util.SortingUtils.printArray;
 
 public class ShellSort {
 	
@@ -16,7 +16,7 @@ public class ShellSort {
 
 				intArray[j] = newElement;
 
-				printIntArray(intArray, " ");
+				printArray(intArray, " ");
 			}
 		}
 	}
