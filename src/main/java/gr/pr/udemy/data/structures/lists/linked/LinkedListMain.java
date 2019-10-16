@@ -1,8 +1,8 @@
-package gr.pr.udemy.data.structures.lists.linked.single;
+package gr.pr.udemy.data.structures.lists.linked;
 
-import gr.pr.udemy.data.structures.lists.linked.Employee;
+import gr.pr.udemy.data.structures.lists.linked.single.EmployeeSingleLinkedList;
 
-public class SingleLinkedListMain {
+public class LinkedListMain {
 
 	public static void main(String[] args) {
 		Employee panagiotisRessos = new Employee(123, "Panagiotis", "Ressos");
@@ -10,7 +10,7 @@ public class SingleLinkedListMain {
 		Employee janeDoe = new Employee(678, "Jane", "Doe");
 		Employee makisKotsovos = new Employee(901, "Makis", "Kotsovos");
 
-		EmployeeSingleLinkedList employees = new EmployeeSingleLinkedList();
+		EmployeeLinkedList employees = new EmployeeSingleLinkedList();
 
 		employees.addToFront(panagiotisRessos);
 		employees.addToFront(johnDoe);
@@ -18,11 +18,11 @@ public class SingleLinkedListMain {
 		employees.addToFront(makisKotsovos);
 
 		System.out.println(employees.size());
-
 		employees.printList();
 
-		Employee removedEmployee = employees.removeAndRetrieveFromFront();
+		System.out.println();
 
+		Employee removedEmployee = employees.removeAndRetrieveFromFront();
 		System.out.println(employees.size());
 		employees.printList();
 		System.out.println("Employee Removed: " + removedEmployee);

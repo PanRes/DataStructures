@@ -16,4 +16,8 @@ public class EmployeeSingleNode {
 	public EmployeeSingleNode(Employee employee) {
 		this.employee = employee;
 	}
+
+	public boolean hasNext() {
+		return next != null;
+	}
 }
