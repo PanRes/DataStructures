@@ -1,4 +1,6 @@
-package gr.pr.udemy.data.structures.lists.linked;
+package gr.pr.udemy.data.structures.lists.linked.custom;
+
+import gr.pr.udemy.data.structures.lists.linked.Employee;
 
 public interface EmployeeLinkedList {
 

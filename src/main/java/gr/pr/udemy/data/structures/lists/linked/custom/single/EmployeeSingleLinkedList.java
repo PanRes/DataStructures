@@ -1,7 +1,7 @@
-package gr.pr.udemy.data.structures.lists.linked.single;
+package gr.pr.udemy.data.structures.lists.linked.custom.single;
 
 import gr.pr.udemy.data.structures.lists.linked.Employee;
-import gr.pr.udemy.data.structures.lists.linked.EmployeeLinkedList;
+import gr.pr.udemy.data.structures.lists.linked.custom.EmployeeLinkedList;
 
 public class EmployeeSingleLinkedList implements EmployeeLinkedList {
 

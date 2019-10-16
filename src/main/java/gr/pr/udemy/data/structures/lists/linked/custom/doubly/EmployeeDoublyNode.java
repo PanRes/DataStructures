@@ -1,4 +1,4 @@
-package gr.pr.udemy.data.structures.lists.linked.doubly;
+package gr.pr.udemy.data.structures.lists.linked.custom.doubly;
 
 import gr.pr.udemy.data.structures.lists.linked.Employee;
 import lombok.Getter;
