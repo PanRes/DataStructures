@@ -1,6 +1,6 @@
 package gr.pr.udemy.data.structures.lists.linked;
 
-import gr.pr.udemy.data.structures.lists.linked.single.EmployeeSingleLinkedList;
+import gr.pr.udemy.data.structures.lists.linked.doubly.EmployeeDoublyLinkedList;
 
 public class LinkedListMain {
 
@@ -10,7 +10,7 @@ public class LinkedListMain {
 		Employee janeDoe = new Employee(678, "Jane", "Doe");
 		Employee makisKotsovos = new Employee(901, "Makis", "Kotsovos");
 
-		EmployeeLinkedList employees = new EmployeeSingleLinkedList();
+		EmployeeLinkedList employees = new EmployeeDoublyLinkedList();
 
 		employees.addToFront(panagiotisRessos);
 		employees.addToFront(johnDoe);
