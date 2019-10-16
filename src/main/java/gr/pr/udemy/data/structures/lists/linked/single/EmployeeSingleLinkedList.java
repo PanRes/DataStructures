@@ -16,6 +16,17 @@ public class EmployeeSingleLinkedList implements EmployeeLinkedList {
 		size++;
 	}
 
+	@Override
+	public void add(Employee employee) {
+		EmployeeSingleNode currentNode = head;
+		while (currentNode.hasNext()) {
+			currentNode = currentNode.getNext();
+		}
+		currentNode.setNext(new EmployeeSingleNode(employee));
+		size++;
+	}
+
+	@Override
 	public Employee removeAndRetrieveFromFront() {
 		if (isEmpty()) {
 			return null;
@@ -27,6 +38,26 @@ public class EmployeeSingleLinkedList implements EmployeeLinkedList {
 		return node.getEmployee();
 	}
 
+	@Override
+	public Employee remove() {
+		if (isEmpty()) {
+			return null;
+		}
+
+		EmployeeSingleNode currentNode = head;
+		EmployeeSingleNode previousNode = null;
+		while (currentNode.hasNext()) {
+			previousNode = currentNode;
+			currentNode = currentNode.getNext();
+		}
+		if (previousNode != null) {
+			previousNode.setNext(null);
+		}
+		size--;
+		return currentNode.getEmployee();
+	}
+
+	@Override
 	public void printList() {
 		System.out.print("HEAD");
 		EmployeeSingleNode currentNode = head;

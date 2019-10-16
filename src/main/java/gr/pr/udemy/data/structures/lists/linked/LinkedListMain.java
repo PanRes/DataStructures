@@ -24,7 +24,23 @@ public class LinkedListMain {
 
 		Employee removedEmployee = employees.removeAndRetrieveFromFront();
 		System.out.println(employees.size());
+		System.out.println("Employee Removed from front: " + removedEmployee);
 		employees.printList();
+
+		System.out.println();
+
+		employees.add(removedEmployee);
+		System.out.println(employees.size());
+		System.out.println("Employee Added");
+		employees.printList();
+
+		System.out.println();
+
+		removedEmployee = employees.remove();
+		System.out.println(employees.size());
 		System.out.println("Employee Removed: " + removedEmployee);
+		employees.printList();
+
+
 	}
 }
