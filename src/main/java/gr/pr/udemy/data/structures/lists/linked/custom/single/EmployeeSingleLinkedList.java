@@ -18,12 +18,17 @@ public class EmployeeSingleLinkedList implements EmployeeLinkedList {
 
 	@Override
 	public void add(Employee employee) {
-		EmployeeSingleNode currentNode = head;
-		while (currentNode.hasNext()) {
-			currentNode = currentNode.getNext();
+		if (isEmpty()) {
+			addToFront(employee);
 		}
-		currentNode.setNext(new EmployeeSingleNode(employee));
-		size++;
+		else {
+			EmployeeSingleNode currentNode = head;
+			while (currentNode.hasNext()) {
+				currentNode = currentNode.getNext();
+			}
+			currentNode.setNext(new EmployeeSingleNode(employee));
+			size++;
+		}
 	}
 
 	public boolean addBeforeEmployee(Employee employeeToAdd, Employee employeeAfter) {
