@@ -36,6 +36,54 @@ public class EmployeeDoublyLinkedList implements EmployeeLinkedList {
 		size++;
 	}
 
+	@Override
+	public boolean addBeforeEmployee(Employee employeeToAdd, Employee employeeAfter) {
+		if (employeeAfter == null || employeeToAdd == null) {
+			throw new NullPointerException();
+		}
+		else if (isEmpty()) {
+			return false;
+		}
+		//head will not be null since list is not empty
+		else if (head.getEmployee().equals(employeeAfter)) {
+			addToFront(employeeToAdd);
+			return true;
+		}
+		//tail will not be null since list is not empty
+		//validation exists to avoid the loop if needs to be added before the tail
+		else if (tail.getEmployee().equals(employeeAfter)) {
+			addBefore(employeeToAdd, tail);
+			return true;
+		}
+		else {
+			EmployeeDoublyNode currentNode = head.getNext();
+			while (currentNode != null && !currentNode.getEmployee().equals(employeeAfter)) {
+				// tail already tested so it will result to reach null
+				if (tail.equals(currentNode.getNext())) {
+					return false;
+				}
+				else {
+					currentNode = currentNode.getNext();
+				}
+			}
+			if (currentNode != null) {
+				addBefore(employeeToAdd, currentNode);
+				return true;
+			}
+		}
+		return false;
+	}
+
+	private void addBefore(Employee employeeToAdd, EmployeeDoublyNode nodeAfter) {
+		EmployeeDoublyNode nodeToAdd = new EmployeeDoublyNode(employeeToAdd);
+
+		nodeToAdd.setPrevious(nodeAfter.getPrevious());
+		nodeAfter.getPrevious().setNext(nodeToAdd);
+		nodeAfter.setPrevious(nodeToAdd);
+		nodeToAdd.setNext(nodeAfter);
+		size++;
+	}
+
 	public Employee removeAndRetrieveFromFront() {
 		if (isEmpty()) {
 			return null;

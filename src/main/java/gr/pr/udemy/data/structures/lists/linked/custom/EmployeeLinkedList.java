@@ -6,6 +6,7 @@ public interface EmployeeLinkedList {
 
 	void addToFront(Employee employee);
 	void add(Employee employee);
+	boolean addBeforeEmployee(Employee employeeToAdd, Employee employeeAfter);
 	Employee removeAndRetrieveFromFront();
 	Employee remove();
 	void printList();

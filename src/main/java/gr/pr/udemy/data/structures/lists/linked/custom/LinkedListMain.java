@@ -42,6 +42,17 @@ public class LinkedListMain {
 		System.out.println("Employee Removed: " + removedEmployee);
 		employees.printList();
 
+		System.out.println();
+
+		if (employees.addBeforeEmployee(removedEmployee, new Employee(111, "Makis", "Kotsovos"))) {
+			System.out.println(employees.size());
+			System.out.println("Removed Employee added before");
+			employees.printList();
+		}
+		else {
+			System.out.println("Employee was not added before");
+		}
+
 
 	}
 }

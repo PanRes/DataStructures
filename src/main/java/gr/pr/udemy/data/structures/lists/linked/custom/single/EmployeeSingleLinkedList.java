@@ -26,7 +26,11 @@ public class EmployeeSingleLinkedList implements EmployeeLinkedList {
 		size++;
 	}
 
-	@Override
+	//TODO fix implementation
+	public boolean addBeforeEmployee(Employee employeeToAdd, Employee employeeAfter) {
+		return false;
+	}
+
 	public Employee removeAndRetrieveFromFront() {
 		if (isEmpty()) {
 			return null;
