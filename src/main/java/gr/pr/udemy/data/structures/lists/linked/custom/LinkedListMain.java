@@ -1,7 +1,7 @@
 package gr.pr.udemy.data.structures.lists.linked.custom;
 
 import gr.pr.udemy.data.structures.lists.linked.Employee;
-import gr.pr.udemy.data.structures.lists.linked.custom.doubly.EmployeeDoublyLinkedList;
+import gr.pr.udemy.data.structures.lists.linked.custom.single.EmployeeSingleLinkedList;
 
 public class LinkedListMain {
 
@@ -11,7 +11,7 @@ public class LinkedListMain {
 		Employee janeDoe = new Employee(678, "Jane", "Doe");
 		Employee makisKotsovos = new Employee(901, "Makis", "Kotsovos");
 
-		EmployeeLinkedList employees = new EmployeeDoublyLinkedList();
+		EmployeeLinkedList employees = new EmployeeSingleLinkedList();
 
 		employees.addToFront(panagiotisRessos);
 		employees.addToFront(johnDoe);
@@ -44,7 +44,7 @@ public class LinkedListMain {
 
 		System.out.println();
 
-		if (employees.addBeforeEmployee(removedEmployee, new Employee(111, "Makis", "Kotsovos"))) {
+		if (employees.addBeforeEmployee(removedEmployee, panagiotisRessos)) {
 			System.out.println(employees.size());
 			System.out.println("Removed Employee added before");
 			employees.printList();
